@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    
+    .mermaid{
+        
+        
+        background-color:bisque;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    .mer{
+        background-color: bisque;
+        margin-bottom: -20px;
+        margin-top: -10px;
+    }
+
+    
+  
+</style>
+    <title>Flow charts</title>
+</head><script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      
+    mermaid.initialize({startOnLoad:true});
+</script>
+<body>
+    <h2 class="mer">Flowchart displaying sum of two numbers</h2>
+    <div class="mermaid">
+        graph TD;
+         A((start))-->B{{Input X,Y }};
+        B-->C(Sum=X+Y);
+        C-->D{Display Sum};
+        D-->E[End]
+        style A fill:violet;
+        style B fill:gray;
+        style C fill:blue;
+        style D fill:green;
+        style E fill:yellow;
+        
+    </div>
+    
+</body>
+</html>
